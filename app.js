@@ -7,7 +7,6 @@ app.use(controller);
 app.set("views", __dirname + "/apps/views");
 app.set("view engine", "ejs");
 app.use("/static", express.static(__dirname + "/public"));
-app.use("/partical", express.static(__dirname + "/views/partical"));
 
 var server = app.listen(3000, function()
 {
