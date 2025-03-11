@@ -9,7 +9,9 @@ router.use("/contact", require(__dirname + "/contactcontroller"));
 router.use("/vegetables", require(__dirname + "/vegetablescontroller"));
 
 //admin
-//router.use("/admin", require(__dirname + "/admin/admincontroller"));
+router.use("/admin", require(__dirname + "/admin/admincontroller"));
+router.use("/widgets", require(__dirname + "/admin/widgetscontroller"));
+router.use("/forms", require(__dirname + "/admin/formscontroller"));
 
 router.get("/", function (req, res) {
     res.render('index.ejs');
